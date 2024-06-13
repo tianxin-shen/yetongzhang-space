@@ -4,29 +4,26 @@ const navItems = {
   "/": {
     name: "home",
   },
-  "/blog": {
-    name: "blog",
+  "/myjourney": {
+    name: "journey",
   },
-  "https://vercel.com/templates/next.js/portfolio-starter-kit": {
-    name: "deploy",
+  "https://github.com/tianxin-shen": {
+    name: "github",
   },
 };
 
 export function Navbar() {
   return (
-    <aside className="-ml-[8px] mb-16 tracking-tight">
+    <aside>
       <div className="lg:sticky lg:top-20">
-        <nav
-          className="flex flex-row items-start relative px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
-          id="nav"
-        >
-          <div className="flex flex-row space-x-0 pr-10">
+        <nav id="nav">
+          <div className="flex flex-row space-x-10 py-5 bg-neutral-900 flex justify-center">
             {Object.entries(navItems).map(([path, { name }]) => {
               return (
                 <Link
                   key={path}
                   href={path}
-                  className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative py-1 px-2 m-1"
+                  className="font-mono hover:text-teal-400 py-1 px-2 m-1"
                 >
                   {name}
                 </Link>
