@@ -1,12 +1,19 @@
 interface pageData {
+  place: string;
   title: string;
   summary: string;
   date: string;
-  tags: string[];
+  tags: string;
+  keywords: string[];
   description: string;
-  content: string;
-  images?: Image[];
+  contentList: Content[];
+  avatar?: Image;
   publications?: Publication[];
+}
+
+interface Content {
+  text: string;
+  image?: Image;
 }
 
 interface Image {
