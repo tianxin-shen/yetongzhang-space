@@ -1,3 +1,5 @@
+import { BORDER, SUBSUBTEXT } from "../assets/colors/colorConstants";
+
 function ArrowIcon() {
   return (
     <svg
@@ -17,20 +19,30 @@ function ArrowIcon() {
 
 export default function Footer() {
   return (
-    <footer className="m-5">
-      <ul className="font-mono flex flex-col space-x-0 space-y-2 text-neutral-300 ">
-        <li>
-          <a
-            className="flex items-center transition-all hover:text-teal-400"
-            rel="noopener noreferrer"
-            target="_blank"
-            href="https://github.com/vercel/next.js"
-          >
-            <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
-          </a>
-        </li>
-      </ul>
+    <footer>
+      <div
+        style={{
+          borderTop: "1px solid " + BORDER,
+          display: "flex",
+          height: "3.75em",
+          padding: "1.25em",
+          justifyContent: "space-between",
+          alignItems: "center",
+          alignSelf: "stretch",
+        }}
+      >
+        <span
+          style={{
+            color: SUBSUBTEXT,
+            fontSize: "0.9rem",
+          }}
+        >
+          Website designed & coded by Tianxin Shen
+        </span>
+        <span style={{ color: SUBSUBTEXT, fontSize: "0.9rem" }}>
+          © 2024 YetongZhang. All rights reserved
+        </span>
+      </div>
     </footer>
   );
 }

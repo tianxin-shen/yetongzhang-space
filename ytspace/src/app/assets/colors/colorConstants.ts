@@ -1,0 +1,14 @@
+const TEXT_UNFOCUSED = "#FAFAFA";
+const TEXT_FOCUSED = "#F4F4F5";
+const TEXT_HOVERED = "#67E8F9";
+
+export const TEXTBUTTON = {
+  UNFOCUSED: TEXT_UNFOCUSED,
+  FOCUSED: TEXT_FOCUSED,
+  HOVERED: TEXT_HOVERED,
+};
+
+export const SUBTEXT = "#C7C7C7";
+export const SUBSUBTEXT = "#A9A9A9";
+
+export const BORDER = "#565656";
