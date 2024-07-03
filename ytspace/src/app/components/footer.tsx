@@ -21,25 +21,23 @@ export default function Footer() {
   return (
     <footer>
       <div
+        className="flex items-center flex-col gap-[0.3125em] p-[0.625rem] md:flex-row md:justify-between md:h-[3.75em] md:p-[1.25em]"
         style={{
           borderTop: "1px solid " + BORDER,
-          display: "flex",
-          height: "3.75em",
-          padding: "1.25em",
-          justifyContent: "space-between",
-          alignItems: "center",
-          alignSelf: "stretch",
         }}
       >
         <span
+          className="md:text-[0.9rem] text-[0.75rem]"
           style={{
             color: SUBSUBTEXT,
-            fontSize: "0.9rem",
           }}
         >
           Website designed & coded by Tianxin Shen
         </span>
-        <span style={{ color: SUBSUBTEXT, fontSize: "0.9rem" }}>
+        <span
+          className="md:text-[0.9rem] text-[0.75rem]"
+          style={{ color: SUBSUBTEXT }}
+        >
           © 2024 YetongZhang. All rights reserved
         </span>
       </div>
