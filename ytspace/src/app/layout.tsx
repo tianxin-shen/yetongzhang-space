@@ -18,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-zinc-900 flex justify-center">
-        <main className="w-4/5 min-w-fit max-w-screen-2xl text-white">
+      <body className="flex flex-col w-100 g-[0.625rem] bg-zinc-900 flex justify-center">
+        <main className="text-white">
           <Navbar />
           <div className="">{children}</div>
           <Footer />
