@@ -21,7 +21,9 @@ export default function RootLayout({
       <body className="flex flex-col w-100 g-[0.625rem] bg-zinc-900 flex justify-center">
         <main className="text-white">
           <Navbar />
-          <div className="">{children}</div>
+          <div className="flex flex-col md:px-[6.25rem] md:py-[3.125rem] p-[0.625rem] g-[1.25rem] items-center">
+            {children}
+          </div>
           <Footer />
         </main>
       </body>
