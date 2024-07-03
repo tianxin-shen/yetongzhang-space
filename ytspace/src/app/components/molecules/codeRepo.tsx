@@ -1,6 +1,7 @@
 import repoIcon from "../../assets/icons/code-fork-solid.svg";
 import Image from "next/image";
-import { TEXTBUTTON, SUBTEXT } from "../../assets/colors/colorConstants";
+import { TEXTBUTTON, SUBSUBTEXT } from "../../assets/colors/colorConstants";
+import { ArrowIcon } from "../atoms/arrow";
 
 export function CodeRepo({
   repoName,
@@ -22,14 +23,14 @@ export function CodeRepo({
       </div>
       <div className="flex flex-col px-[20px]">
         <span
-          className="text-[0.875rem] md:text-[1.25rem] md:font-semibold font-medium"
+          className="text-[0.825rem] md:text-[1.08rem] md:font-semibold font-medium"
           style={{ color: TEXTBUTTON.UNFOCUSED }}
         >
           {repoName}
         </span>
         <span
           className="text-[0.75rem] md:text-[1rem]"
-          style={{ color: SUBTEXT }}
+          style={{ color: SUBSUBTEXT }}
         >
           {repoDescription}
         </span>
@@ -37,9 +38,10 @@ export function CodeRepo({
           href={repoUrl}
           target="_blank"
           rel="noreferrer"
-          className="text-[0.75rem] md:text-[1rem] text-teal-400 underline"
+          className="text-[0.65rem] md:text-[0.85rem] text-teal-400 underline flex flex-row items-center gap-[0.3125rem] mt-[0.3125rem]"
         >
           View on Github
+          <ArrowIcon />
         </a>
       </div>
     </div>
